@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>psbbviewer</title>
+
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/underscore.js"></script>
+<script type="text/javascript" src="js/backbone.js"></script>
+<script type="text/javascript" src="js/bsLite.js"></script>
+<script type="text/javascript" src="js/psbbviewer.js"></script>
+
+<script type="text/javascript">
+$().ready(function () {
+	var pbv = new Viewer('http://marc.stage.photoshelter.com');
+});
+</script>
+
+<head>
+
+<body>
+
+<div id="galList"></div>
+
+<div id="gal"></div>
+
+<script type="text/template" id="galTpl" class="template">
+<h1><%= gal.G_NAME =></h1>
+</script>
+
+</body>
+</html>
+
+
+
